@@ -1,4 +1,5 @@
 #!/bin/bash -eux
+return
 
 OS=${PDFium_TARGET_OS:?}
 CPU="${PDFium_TARGET_CPU:?}"

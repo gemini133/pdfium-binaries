@@ -13,7 +13,7 @@ apply_patch() {
 
 pushd "${SOURCE}"
 
-[ "$OS" != "emscripten" ] && apply_patch "$PATCHES/shared_library.patch"
+# [ "$OS" != "emscripten" ] && apply_patch "$PATCHES/shared_library.patch"
 apply_patch "$PATCHES/public_headers.patch"
 
 [ "${PDFium_ENABLE_V8:-}" == "true" ] && apply_patch "$PATCHES/v8/pdfium.patch"
