@@ -21,6 +21,10 @@ mkdir -p "$BUILD"
   echo "treat_warnings_as_errors = false"
   echo "is_component_build = false"
   echo 'pdf_is_complete_lib = true'
+  echo 'symbol_level = 0'
+  echo 'use_custom_libcxx = false'
+  echo 'use_sysroot = false'
+  echo 'use_allocator_shim = false'
 
   if [ "$ENABLE_V8" == "true" ]; then
     echo "v8_use_external_startup_data = false"
